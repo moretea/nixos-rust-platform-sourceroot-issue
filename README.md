@@ -13,6 +13,8 @@ Run `build.sh` to run all provided examples, and check the `*.log` files to veri
 The output on my machine is:
 
 ### For `stdenv_subdir.log`
+**NOTE**: I've set `dontMakeSourcesWritable` for this testcase, to show
+that even a `stdenv` based build requires some some things to be modifiable
 ```
 these derivations will be built:
   /nix/store/9qqxa0rcxpbmipj7lxp9a7nrdgznmyi8-failure.drv

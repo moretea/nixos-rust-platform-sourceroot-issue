@@ -13,7 +13,7 @@ Run `build.sh` to run all provided examples, and check the `*.log` files to veri
 The output on my machine is:
 
 ### For `stdenv_subdir.log`
-``
+```
 these derivations will be built:
   /nix/store/9qqxa0rcxpbmipj7lxp9a7nrdgznmyi8-failure.drv
 building path(s) ‘/nix/store/qfm99fxz1da8d6cmhfcqn01a24hxld0p-failure’
@@ -27,10 +27,10 @@ configure flags: --prefix=/nix/store/qfm99fxz1da8d6cmhfcqn01a24hxld0p-failure
 ./configure: line 1387: config.log: Permission denied
 builder for ‘/nix/store/9qqxa0rcxpbmipj7lxp9a7nrdgznmyi8-failure.drv’ failed with exit code 1
 error: build of ‘/nix/store/9qqxa0rcxpbmipj7lxp9a7nrdgznmyi8-failure.drv’ failed
-``
+```
 
 ### For `rust_parentdir.log`
-``
+```
 these derivations will be built:
   /nix/store/6jii9vxm7cnb9gm9h2mvvgrvxpddzzg3-failure-fetch.drv
   /nix/store/x8vlz6i2gn646wgsk72dnnlgcwmawamb-failure.drv
@@ -47,10 +47,10 @@ chmod: changing permissions of '/nix/store/127ngrm9pslsv7lxw9qs7g1gxkn7zn5n-rust
 builder for ‘/nix/store/6jii9vxm7cnb9gm9h2mvvgrvxpddzzg3-failure-fetch.drv’ failed with exit code 1
 cannot build derivation ‘/nix/store/x8vlz6i2gn646wgsk72dnnlgcwmawamb-failure.drv’: 1 dependencies couldn't be built
 error: build of ‘/nix/store/x8vlz6i2gn646wgsk72dnnlgcwmawamb-failure.drv’ failed
-``
+```
 
 ### For `rust_subdir.log`
-``
+```
 these derivations will be built:
   /nix/store/gq2b3vi89dwgwvpb4nlkv6zwsmlgv4mq-failure-fetch.drv
   /nix/store/gg662wyanazppzsnhxw7zjzvrbmq4404-failure.drv
@@ -66,4 +66,4 @@ chmod: changing permissions of '/nix/store/c9mlwrbyrjiksl2lrxljzjaxc9ay54mb-rust
 builder for ‘/nix/store/gq2b3vi89dwgwvpb4nlkv6zwsmlgv4mq-failure-fetch.drv’ failed with exit code 1
 cannot build derivation ‘/nix/store/gg662wyanazppzsnhxw7zjzvrbmq4404-failure.drv’: 1 dependencies couldn't be built
 error: build of ‘/nix/store/gg662wyanazppzsnhxw7zjzvrbmq4404-failure.drv’ failed
-``
+```

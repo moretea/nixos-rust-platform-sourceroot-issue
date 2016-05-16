@@ -31,6 +31,21 @@ builder for ‘/nix/store/9qqxa0rcxpbmipj7lxp9a7nrdgznmyi8-failure.drv’ failed
 error: build of ‘/nix/store/9qqxa0rcxpbmipj7lxp9a7nrdgznmyi8-failure.drv’ failed
 ```
 
+When inspecting the source root dir, we see that indeed nothing is writable.
+
+```
+$ ls -lah /nix/store/30l78fwm2r0f7alwvsfwc8bw0k99kc11-stdenv_build_subdir/sub_project
+total 164K
+dr-xr-xr-x 2 root root    7 Jan  1  1970 .
+dr-xr-xr-x 3 root root    3 Jan  1  1970 ..
+-r-xr-xr-x 1 root root 105K Jan  1  1970 configure
+-r--r--r-- 1 root root   89 Jan  1  1970 configure.ac
+-r--r--r-- 1 root root  270 Jan  1  1970 default.nix
+-r--r--r-- 1 root root   49 Jan  1  1970 main.c
+-r--r--r-- 1 root root   42 Jan  1  1970 Makefile.am
+```
+
+
 ### For `rust_parentdir.log`
 ```
 these derivations will be built:
